@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "Runtime/Engine/Public/DrawDebugHelpers.h"
 #include "Runtime/Core/Public/UObject/NameTypes.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "Grabber.generated.h"
 
 
@@ -28,6 +29,7 @@ public:
 
 private:
     float Reach = 100.0;
-		
+    
+    UPhysicsHandleComponent* PhysicsHandle = nullptr;
 	
 };
