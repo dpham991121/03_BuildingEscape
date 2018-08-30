@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Runtime/Engine/Public/DrawDebugHelpers.h"
+#include "Runtime/Core/Public/UObject/NameTypes.h"
 #include "Grabber.generated.h"
 
 
