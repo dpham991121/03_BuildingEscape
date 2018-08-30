@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Runtime/Engine/Public/DrawDebugHelpers.h"
 #include "Grabber.generated.h"
 
 
@@ -24,6 +25,8 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+private:
+    float Reach = 100.0;
 		
 	
 };
