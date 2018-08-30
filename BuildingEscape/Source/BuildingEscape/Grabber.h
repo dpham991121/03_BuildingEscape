@@ -7,6 +7,7 @@
 #include "Runtime/Engine/Public/DrawDebugHelpers.h"
 #include "Runtime/Core/Public/UObject/NameTypes.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
+#include "Runtime/Engine/Classes/Components/InputComponent.h"
 #include "Grabber.generated.h"
 
 
@@ -32,4 +33,8 @@ private:
     
     UPhysicsHandleComponent* PhysicsHandle = nullptr;
 	
+    UInputComponent* InputComponent = nullptr;
+    
+    // Ray-cast and grab what in-reach
+    void Grab();
 };
