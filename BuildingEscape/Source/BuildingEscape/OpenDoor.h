@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Engine/TriggerVolume.h"
+#include "Runtime/Engine/Classes/Components/PrimitiveComponent.h"
 #include "OpenDoor.generated.h"
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -38,7 +39,8 @@ private:
     
     float LastDoorOpenTime;
     
-    AActor* ActorThatOpen; //Pawn inherits from actor
     AActor* Owner; // The owning door
+    
+    float GetTotalMassOfActorsOnPlate();
 };
 
